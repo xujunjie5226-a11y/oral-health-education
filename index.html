@@ -1,168 +1,1025 @@
-🦷 口腔与血糖
-核心概念
-双向机制
-危险信号
-护牙指南
-知识问答
-风险自测
-🦷
-你的牙，可能也在
-影响血糖
-口腔健康和糖尿病不是两回事。
-它们之间有一条"双向通道"——了解它，就能更好地保护自己。
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>口腔健康与糖尿病 — 科普指南</title>
+<style>
+/* ===== CSS Reset & 基础变量 ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --teal-50: #f0fdfa;  --teal-100: #ccfbf1;  --teal-200: #99f6e4;
+  --teal-300: #5eead4;  --teal-400: #2dd4bf;  --teal-500: #14b8a6;
+  --teal-600: #0d9488;  --teal-700: #0f766e;  --teal-800: #115e59;
+  --teal-900: #134e4a;
+  --red-50: #fef2f2;    --red-400: #f87171;    --red-600: #dc2626;
+  --amber-50: #fffbeb;  --amber-400: #fbbf24;  --amber-600: #d97706;
+  --gray-100: #f3f4f6;  --gray-200: #e5e7eb;  --gray-400: #9ca3af;
+  --gray-500: #6b7280;  --gray-700: #374151;  --gray-900: #111827;
+  --radius: 16px; --shadow-sm: 0 1px 3px rgba(0,0,0,0.06);
+  --shadow-md: 0 4px 20px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+}
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+  color: var(--gray-700); line-height: 1.75; background: #f8faf9;
+}
 
-~2×
-糖尿病患者牙周炎风险
-0.4%
-治疗牙周炎后 HbA1c 降幅
-开始了解 ↓
-📚 先了解几个关键概念
-在看机制之前，先认识三个"主角"
-把它们记住，后面的内容会更好理解
+/* ===== 导航栏 ===== */
+nav {
+  position: fixed; top: 0; width: 100%; z-index: 1000;
+  background: rgba(255,255,255,0.92); backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+  transition: box-shadow 0.3s;
+}
+nav.scrolled { box-shadow: 0 2px 16px rgba(0,0,0,0.1); }
+.nav-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 28px;
+}
+.nav-logo {
+  font-size: 18px; font-weight: 700;
+  background: linear-gradient(135deg, var(--teal-600), var(--teal-800));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.nav-links { display: flex; gap: 8px; flex-wrap: wrap; }
+.nav-links a {
+  text-decoration: none; color: var(--gray-500); font-size: 13.5px;
+  padding: 6px 14px; border-radius: 20px;
+  transition: all 0.25s; font-weight: 500;
+}
+.nav-links a:hover, .nav-links a.active {
+  color: var(--teal-700); background: var(--teal-50);
+}
 
-🔥
-炎症因子
-身体发炎时释放的信号分子，进入血液后能传遍全身
-🔑
-胰岛素抵抗
-胰岛素"有劲使不上"，细胞对胰岛素反应变差，血糖降不下来
-🩸
-糖化血红蛋白
-反映过去2-3个月平均血糖水平，是血糖控制的"成绩单"
-🔬 双向机制
-口腔和血糖，为什么会互相影响？
-一张图 + 两段话，把这个"恶性循环"说清楚
+/* ===== 通用 Section ===== */
+section {
+  max-width: 1000px; margin: 0 auto;
+  padding: 90px 28px 50px;
+}
+.section-tag {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--teal-100); color: var(--teal-700);
+  font-size: 13px; font-weight: 700; letter-spacing: 0.5px;
+  padding: 6px 16px; border-radius: 20px; margin-bottom: 16px;
+  text-transform: uppercase;
+}
+section h2 {
+  font-size: 30px; color: var(--teal-900);
+  margin-bottom: 8px; line-height: 1.35;
+  letter-spacing: -0.3px;
+}
+section > .subtitle {
+  color: var(--gray-500); font-size: 16px;
+  margin-bottom: 36px; max-width: 600px;
+}
 
-🩸 高血糖 → 口腔受损
-🩸
-血糖长期偏高，损害牙龈微小血管
-🛡️
-免疫细胞功能受抑制，杀菌能力下降
-🐛
-口腔细菌大量繁殖，牙龈发炎出血
-🩹
-伤口愈合变慢，拔牙/溃疡不易恢复
-→
-血糖高
-伤口腔
-恶性
-循环
-→
-口腔炎
-扰血糖
-🦷 口腔发炎 → 血糖难控
-🔥
-牙周发炎，释放炎症因子进入血液
-🌊
-炎症因子随血液循环到达全身
-🚫
-干扰胰岛素正常工作（胰岛素抵抗加重）
-📈
-血糖更难降下来，形成恶性循环
-🩸→🦷
-方向一：血糖高，口腔先遭殃
-长期高血糖会损害牙龈里密集的微小血管，让牙龈得不到足够营养；同时免疫细胞在高糖环境中变得"迟钝"，杀菌能力下降。于是细菌趁虚而入，牙龈发炎、出血，伤口愈合也变慢。
+/* ===== 卡片 ===== */
+.card {
+  background: #fff; border-radius: var(--radius);
+  padding: 28px 30px; margin-bottom: 18px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid #e8f0ee;
+  transition: box-shadow 0.25s, transform 0.2s;
+}
+.card:hover { box-shadow: var(--shadow-md); }
+.card h3 { font-size: 18px; color: var(--teal-800); margin-bottom: 10px; }
+.card p, .card li { font-size: 15px; color: var(--gray-700); }
+.card ul { padding-left: 20px; }
+.card ul li { margin-bottom: 6px; }
 
-🦷→🩸
-方向二：牙周发炎，血糖也受牵连
-发炎的牙龈会持续释放炎症因子（如 TNF-α、IL-6）。这些"发炎信号弹"进入血液后流遍全身，干扰胰岛素降低血糖的过程——医学上称为"胰岛素抵抗"，结果就是血糖更难管理。
+/* ===== Hero ===== */
+#hero {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  text-align: center; position: relative; overflow: hidden;
+  background: linear-gradient(165deg, #f0fdfa 0%, #e0f7f4 30%, #ccfbf1 60%, #b8f0e4 100%);
+  padding-top: 70px;
+}
+#hero::before {
+  content: ''; position: absolute; top: -200px; right: -150px;
+  width: 500px; height: 500px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(20,184,166,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+#hero::after {
+  content: ''; position: absolute; bottom: -100px; left: -80px;
+  width: 350px; height: 350px; border-radius: 50%;
+  background: radial-gradient(circle, rgba(45,212,191,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-content { position: relative; z-index: 1; max-width: 620px; padding: 0 20px; }
+.hero-icon {
+  width: 90px; height: 90px; margin: 0 auto 20px;
+  background: #fff; border-radius: 28px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 48px; box-shadow: 0 8px 30px rgba(13,148,136,0.15);
+}
+.hero-content h1 {
+  font-size: 40px; color: var(--teal-900);
+  margin-bottom: 14px; line-height: 1.25; letter-spacing: -0.5px;
+  font-weight: 800;
+}
+.hero-content h1 .highlight {
+  background: linear-gradient(135deg, var(--teal-500), var(--teal-600));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-content p {
+  font-size: 17px; color: var(--gray-500); margin-bottom: 36px;
+  line-height: 1.7;
+}
+.hero-stats {
+  display: flex; gap: 32px; justify-content: center;
+  margin-bottom: 36px; flex-wrap: wrap;
+}
+.hero-stat {
+  text-align: center;
+}
+.hero-stat .stat-num {
+  font-size: 32px; font-weight: 800; color: var(--teal-600);
+  line-height: 1.1;
+}
+.hero-stat .stat-label {
+  font-size: 12.5px; color: var(--gray-500); margin-top: 4px;
+}
 
-🔑
-一句话记住
-血糖高 → 口腔容易发炎 → 炎症因子进入血液 → 血糖更难降 → 恶性循环开始
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--teal-500), var(--teal-600));
+  color: #fff; padding: 14px 36px; border-radius: 30px;
+  text-decoration: none; font-size: 16px; font-weight: 700;
+  transition: all 0.25s; border: none; cursor: pointer;
+  box-shadow: 0 4px 16px rgba(13,148,136,0.25);
+  letter-spacing: 0.3px;
+}
+.btn:hover { transform: translateY(-2px); box-shadow: 0 6px 24px rgba(13,148,136,0.35); }
+.btn-outline {
+  background: transparent; color: var(--teal-600);
+  border: 2px solid var(--teal-400); box-shadow: none;
+}
+.btn-outline:hover { background: var(--teal-50); }
 
-但好消息是：打断任何一环，都能帮到另一边
-⚠️ 早期预警
-这些口腔信号，提醒你关注血糖
-出现以下任何一种情况，建议尽早看牙医，同时查一下血糖
+/* ===== 预训练：关键概念 ===== */
+.concept-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.concept-chip {
+  background: #fff; border-radius: 14px; padding: 20px 18px;
+  text-align: center; border: 2px solid #e8f0ee;
+  box-shadow: var(--shadow-sm); transition: all 0.25s;
+}
+.concept-chip:hover { border-color: var(--teal-300); transform: translateY(-2px); }
+.concept-chip .chip-icon { font-size: 32px; margin-bottom: 8px; }
+.concept-chip .chip-title {
+  font-size: 14.5px; font-weight: 700; color: var(--teal-800);
+  margin-bottom: 4px;
+}
+.concept-chip .chip-desc {
+  font-size: 13px; color: var(--gray-500); line-height: 1.5;
+}
 
-🩸
-刷牙经常出血
-牙刷或泡沫里带血丝——不是"上火"，可能是牙龈炎的信号
+/* ===== 机制图解 ===== */
+.mechanism-diagram {
+  background: #fff; border-radius: var(--radius);
+  padding: 36px 24px; margin-bottom: 32px;
+  box-shadow: var(--shadow-md); border: 1px solid #e8f0ee;
+  overflow-x: auto;
+}
+.diagram-inner {
+  display: flex; align-items: stretch; justify-content: center;
+  gap: 0; min-width: 700px;
+}
+.diagram-col {
+  flex: 1; max-width: 280px; padding: 20px 16px;
+  border-radius: 14px; text-align: center;
+}
+.diagram-col.left { background: linear-gradient(180deg, #fef2f2, #fff); border: 2px solid #fecaca; }
+.diagram-col.right { background: linear-gradient(180deg, #fff, #f0fdfa); border: 2px solid #a7f3d0; }
+.diagram-col .col-title {
+  font-size: 15px; font-weight: 700; margin-bottom: 14px;
+}
+.diagram-col.left .col-title { color: var(--red-600); }
+.diagram-col.right .col-title { color: var(--teal-700); }
+.diagram-step {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 12px; margin-bottom: 10px;
+  border-radius: 10px; background: rgba(255,255,255,0.7);
+  text-align: left; font-size: 13px; color: var(--gray-700);
+  line-height: 1.5;
+}
+.diagram-step .ds-icon { font-size: 22px; flex-shrink: 0; }
+.diagram-arrows {
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center; padding: 0 16px; gap: 10px;
+  min-width: 80px;
+}
+.diagram-arrow {
+  display: flex; flex-direction: column; align-items: center;
+  font-size: 12px; color: var(--gray-500); font-weight: 600;
+  gap: 4px;
+}
+.diagram-arrow .arrow-line {
+  font-size: 22px; color: var(--teal-500); line-height: 1;
+}
+.diagram-center {
+  display: flex; align-items: center; justify-content: center;
+  padding: 0 8px; min-width: 70px;
+}
+.diagram-cycle {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: linear-gradient(135deg, #fee2e2, #fef2f2);
+  border: 3px dashed #f87171;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 800; color: var(--red-600);
+  text-align: center; line-height: 1.3;
+}
 
-🔴
-牙龈红肿、按压痛
-牙龈颜色暗红发亮，轻轻一碰就疼，说明正在发炎
+/* 机制文字卡片 */
+.mechanism-card {
+  background: #fff; border-radius: var(--radius);
+  padding: 24px 28px; margin-bottom: 16px;
+  box-shadow: var(--shadow-sm); border-left: 4px solid var(--teal-500);
+  transition: box-shadow 0.25s;
+}
+.mechanism-card:hover { box-shadow: var(--shadow-md); }
+.mechanism-card .mc-header {
+  display: flex; align-items: center; gap: 12px; margin-bottom: 8px;
+}
+.mechanism-card .mc-icon {
+  font-size: 32px; flex-shrink: 0;
+  width: 48px; text-align: center;
+}
+.mechanism-card h3 { font-size: 17px; color: var(--teal-800); }
+.mechanism-card p { font-size: 15px; color: var(--gray-700); }
 
-🦷
-牙齿松动、咀嚼无力
-牙齿开始晃动，吃硬东西用不上力——牙周组织可能已受损
+/* 分隔符 */
+.section-divider {
+  text-align: center; padding: 16px 0; position: relative;
+}
+.section-divider::before {
+  content: ''; position: absolute; top: 50%; left: 15%; right: 15%;
+  height: 2px; background: linear-gradient(90deg, transparent, var(--teal-200), transparent);
+}
+.section-divider .divider-badge {
+  display: inline-block; position: relative; z-index: 1;
+  background: var(--teal-600); color: #fff;
+  padding: 10px 24px; border-radius: 24px;
+  font-size: 14px; font-weight: 700;
+}
 
-🩹
-口腔溃疡反复不愈
-溃疡超过2周还在，糖尿病患者需特别警惕
+/* Key message 高亮 */
+.key-message {
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
+  border: 2px dashed var(--teal-300); border-radius: var(--radius);
+  padding: 28px 32px; margin: 28px 0; text-align: center;
+}
+.key-message .km-icon { font-size: 36px; margin-bottom: 8px; }
+.key-message .km-title {
+  font-size: 18px; font-weight: 700; color: var(--teal-900); margin-bottom: 8px;
+}
+.key-message .km-body {
+  font-size: 15px; color: var(--gray-700); line-height: 1.7;
+}
+.key-message .km-highlight {
+  display: inline-block; background: var(--teal-600); color: #fff;
+  padding: 3px 12px; border-radius: 4px; font-weight: 700;
+}
 
-🏜️
-长期口干
-唾液减少不仅不适，还会让细菌更容易滋生
+/* ===== 危险信号 ===== */
+.signal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+.signal-card {
+  background: #fff; border-radius: var(--radius); padding: 22px 20px;
+  box-shadow: var(--shadow-sm); border: 1px solid #e8f0ee;
+  transition: all 0.3s; cursor: default;
+  display: flex; gap: 14px; align-items: flex-start;
+}
+.signal-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.signal-card .sig-icon {
+  font-size: 36px; flex-shrink: 0;
+  width: 54px; height: 54px; border-radius: 14px;
+  background: var(--teal-50); display: flex; align-items: center;
+  justify-content: center;
+}
+.signal-card .sig-content h4 {
+  font-size: 15.5px; color: var(--teal-800); margin-bottom: 4px; font-weight: 700;
+}
+.signal-card .sig-content p {
+  font-size: 13.5px; color: var(--gray-500); line-height: 1.55;
+}
+.signal-alert {
+  background: var(--red-50); border: 2px solid #fecaca;
+  border-radius: var(--radius); padding: 20px 24px; margin-top: 24px;
+  display: flex; align-items: center; gap: 14px;
+}
+.signal-alert .alert-icon { font-size: 28px; flex-shrink: 0; }
+.signal-alert p { font-size: 15px; color: #991b1b; font-weight: 600; line-height: 1.6; }
 
-😷
-持续口腔异味
-顽固口臭可能是牙周感染或血糖控制不佳的表现
+/* ===== 护牙建议 ===== */
+.tips-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+.tip-card {
+  background: #fff; border-radius: var(--radius); padding: 24px 18px;
+  text-align: center; box-shadow: var(--shadow-sm);
+  border-top: 4px solid var(--teal-400);
+  transition: all 0.3s; position: relative;
+}
+.tip-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.tip-num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 38px; height: 38px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--teal-500), var(--teal-600));
+  color: #fff; font-size: 17px; font-weight: 800;
+  margin-bottom: 12px;
+}
+.tip-card h4 { font-size: 16px; color: var(--teal-800); margin-bottom: 8px; font-weight: 700; }
+.tip-card p { font-size: 13.5px; color: var(--gray-500); line-height: 1.55; }
 
-💡
-以上任何症状出现，除了看牙医，也建议测一下血糖。口腔问题有时是血糖异常的"最早信号"。
+/* ===== 知识问答 ===== */
+.quiz-container {
+  background: #fff; border-radius: var(--radius); padding: 36px 32px;
+  box-shadow: var(--shadow-md); border: 1px solid #e8f0ee;
+}
+.quiz-progress {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 28px;
+}
+.quiz-progress .progress-bar {
+  flex: 1; height: 8px; background: var(--gray-200);
+  border-radius: 4px; overflow: hidden;
+}
+.progress-fill {
+  height: 100%; border-radius: 4px;
+  background: linear-gradient(90deg, var(--teal-300), var(--teal-600));
+  transition: width 0.5s ease;
+}
+.quiz-progress .progress-text {
+  font-size: 13px; color: var(--gray-400); font-weight: 600; white-space: nowrap;
+}
+.quiz-question {
+  font-size: 18px; font-weight: 700; color: var(--teal-900);
+  margin-bottom: 20px; line-height: 1.45;
+}
+.quiz-options {
+  display: flex; flex-direction: column; gap: 10px;
+}
+.quiz-options label {
+  display: flex; align-items: center; gap: 12px;
+  padding: 15px 18px; border: 2px solid var(--gray-200);
+  border-radius: 12px; font-size: 15px; cursor: pointer;
+  transition: all 0.2s; background: #fafbfb;
+}
+.quiz-options label:hover {
+  border-color: var(--teal-300); background: var(--teal-50);
+}
+.quiz-options label.selected-correct {
+  border-color: #86efac; background: #f0fdf4;
+}
+.quiz-options label.selected-wrong {
+  border-color: #fca5a5; background: #fef2f2;
+}
+.quiz-options input[type="radio"] { accent-color: var(--teal-600); width: 18px; height: 18px; }
+.quiz-feedback {
+  margin-top: 18px; padding: 16px 18px; border-radius: 12px;
+  font-size: 14.5px; line-height: 1.6; display: none;
+}
+.quiz-feedback.show { display: block; }
+.quiz-feedback.correct { background: #f0fdf4; border: 2px solid #86efac; color: #166534; }
+.quiz-feedback.wrong { background: #fef2f2; border: 2px solid #fca5a5; color: #991b1b; }
+.quiz-btn-row { margin-top: 22px; display: flex; gap: 12px; justify-content: center; }
+.quiz-result {
+  text-align: center; padding: 32px 20px; display: none;
+}
+.quiz-result .score-circle {
+  width: 120px; height: 120px; border-radius: 50%;
+  margin: 0 auto 16px;
+  background: linear-gradient(135deg, var(--teal-100), var(--teal-200));
+  display: flex; flex-direction: column; align-items: center;
+  justify-content: center;
+}
+.quiz-result .score-num {
+  font-size: 42px; font-weight: 900; color: var(--teal-700); line-height: 1;
+}
+.quiz-result .score-label {
+  font-size: 13px; color: var(--teal-600); font-weight: 600;
+}
+.quiz-result p { font-size: 16px; color: var(--gray-700); margin-top: 8px; }
 
-✅ 行动指南
-5 件事，护牙也护血糖
-简单实用，今天就能开始
+/* ===== 风险自测 ===== */
+.assess-form {
+  background: #fff; border-radius: var(--radius); padding: 32px;
+  box-shadow: var(--shadow-md); border: 1px solid #e8f0ee;
+}
+.assess-intro {
+  font-size: 15px; color: var(--gray-500); margin-bottom: 20px;
+}
+.assess-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 8px;
+}
+.assess-item {
+  padding: 12px 14px; border-radius: 10px;
+  transition: background 0.2s;
+}
+.assess-item:hover { background: var(--gray-100); }
+.assess-item label {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 14.5px; cursor: pointer; color: var(--gray-700);
+}
+.assess-item input[type="checkbox"] {
+  width: 20px; height: 20px; accent-color: var(--teal-600); flex-shrink: 0;
+}
+.assess-result {
+  margin-top: 24px; padding: 24px; border-radius: var(--radius);
+  display: none;
+}
+.assess-result.show { display: block; }
+.assess-result .result-icon { font-size: 40px; margin-bottom: 8px; }
+.assess-result h3 { font-size: 18px; margin-bottom: 10px; }
+.assess-result p { font-size: 14.5px; margin-bottom: 6px; line-height: 1.6; }
+.assess-result.low { background: #f0fdf4; border: 2px solid #86efac; }
+.assess-result.low h3 { color: #166534; }
+.assess-result.mid { background: #fffbeb; border: 2px solid #fcd34d; }
+.assess-result.mid h3 { color: #92400e; }
+.assess-result.high { background: #fef2f2; border: 2px solid #fca5a5; }
+.assess-result.high h3 { color: #991b1b; }
 
-1
-认真刷牙
-早晚各一次，每次≥2分钟。牙刷斜45°贴牙龈轻刷，别忘了舌头
+/* ===== 引用/来源 ===== */
+.ref-section {
+  background: #fff; border-radius: var(--radius); padding: 28px 30px;
+  box-shadow: var(--shadow-sm); border: 1px solid #e8f0ee;
+}
+.ref-section h3 { color: var(--teal-800); margin-bottom: 12px; font-size: 17px; }
+.ref-section ol {
+  padding-left: 20px; font-size: 13px; color: var(--gray-500);
+  line-height: 1.7;
+}
+.ref-section ol li { margin-bottom: 4px; }
 
-2
-每天用牙线
-牙刷刷不到牙缝，牙线/牙缝刷每天至少一次
+/* ===== 底部 ===== */
+footer {
+  text-align: center; padding: 44px 24px;
+  background: linear-gradient(180deg, #134e4a, #0f3e3b);
+  color: #99f6e4; font-size: 13px; margin-top: 60px;
+}
+footer a { color: var(--teal-300); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
 
-3
-定期洗牙
-每半年到一年洗一次，清除刷不掉的牙结石
+/* ===== 动画 ===== */
+.fade-in {
+  opacity: 0; transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-in.visible { opacity: 1; transform: translateY(0); }
 
-4
-告诉牙医病情
-看牙时主动告知有糖尿病和用药情况，确保安全治疗
+/* ===== 响应式 ===== */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-inner { padding: 12px 16px; }
+  section { padding: 70px 16px 36px; }
+  .hero-content h1 { font-size: 28px; }
+  #hero { min-height: 90vh; }
+  .hero-stats { gap: 20px; }
+  .hero-stat .stat-num { font-size: 26px; }
+  .diagram-inner { flex-direction: column; min-width: unset; align-items: center; }
+  .diagram-arrows { flex-direction: row; padding: 12px 0; }
+  .diagram-center { padding: 12px 0; }
+  .signal-grid { grid-template-columns: 1fr; }
+  .tips-wrapper { grid-template-columns: 1fr 1fr; }
+  .assess-grid { grid-template-columns: 1fr; }
+  .concept-row { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .tips-wrapper { grid-template-columns: 1fr; }
+  .concept-row { grid-template-columns: 1fr; }
+  section h2 { font-size: 24px; }
+  .quiz-container { padding: 20px 16px; }
+  .assess-form { padding: 20px 16px; }
+}
+</style>
+</head>
+<body>
 
-5
-管好血糖
-血糖稳了，口腔问题自然减少。按时吃药、规律测糖、健康饮食
+<!-- ===== 导航栏 ===== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo">🦷 口腔与血糖</div>
+    <div class="nav-links">
+      <a href="#pre" class="nav-link">核心概念</a>
+      <a href="#mechanism" class="nav-link">双向机制</a>
+      <a href="#signals" class="nav-link">危险信号</a>
+      <a href="#tips" class="nav-link">护牙指南</a>
+      <a href="#quiz" class="nav-link">知识问答</a>
+      <a href="#assess" class="nav-link">风险自测</a>
+    </div>
+  </div>
+</nav>
 
-🧠 自测一下
-你了解多少？
-6 道题，看看你对口腔与糖尿病的关系掌握了多少
+<!-- ===== Hero ===== -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-icon">🦷</div>
+    <h1>你的牙，可能也在<br>影响<span class="highlight">血糖</span></h1>
+    <p>口腔健康和糖尿病不是两回事。<br>它们之间有一条"双向通道"——了解它，就能更好地保护自己。</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="stat-num">~2×</div>
+        <div class="stat-label">糖尿病患者牙周炎风险</div>
+      </div>
+      <div class="hero-stat">
+        <div class="stat-num">0.4%</div>
+        <div class="stat-label">治疗牙周炎后 HbA1c 降幅</div>
+      </div>
+    </div>
+    <a href="#pre" class="btn">开始了解 ↓</a>
+  </div>
+</section>
 
-0/6
-糖尿病和口腔健康有关系吗？
-没有关系，是两回事
-有关系，会互相影响
-只有糖尿病影响口腔，反过来不会
-只有口腔影响糖尿病，反过来不会
-📋 风险评估
-口腔健康风险自评
-勾选你目前的情况，了解自己的风险等级
+<!-- ===== CTML 预训练：核心概念 ===== -->
+<section id="pre">
+  <span class="section-tag">📚 先了解几个关键概念</span>
+  <h2>在看机制之前，先认识三个"主角"</h2>
+  <p class="subtitle">把它们记住，后面的内容会更好理解</p>
 
-请如实勾选符合你情况的选项：
+  <div class="concept-row">
+    <div class="concept-chip fade-in">
+      <div class="chip-icon">🔥</div>
+      <div class="chip-title">炎症因子</div>
+      <div class="chip-desc">身体发炎时释放的信号分子，进入血液后能传遍全身</div>
+    </div>
+    <div class="concept-chip fade-in">
+      <div class="chip-icon">🔑</div>
+      <div class="chip-title">胰岛素抵抗</div>
+      <div class="chip-desc">胰岛素"有劲使不上"，细胞对胰岛素反应变差，血糖降不下来</div>
+    </div>
+    <div class="concept-chip fade-in">
+      <div class="chip-icon">🩸</div>
+      <div class="chip-title">糖化血红蛋白</div>
+      <div class="chip-desc">反映过去2-3个月平均血糖水平，是血糖控制的"成绩单"</div>
+    </div>
+  </div>
+</section>
 
-我有糖尿病（1型或2型）
-我的血糖控制不理想（HbA1c > 7%）
-刷牙时经常出血
-牙龈经常红肿或疼痛
-有牙齿松动的情况
-口腔溃疡反复发作
-经常觉得口干
-有持续的口腔异味
-超过一年没看过牙医
-吸烟
-查看结果
-📖 内容参考
-Preshaw PM, et al. Periodontitis and diabetes: a two-way relationship. Diabetologia. 2012;55(1):21-31.
-Sanz M, et al. Scientific evidence on the links between periodontal diseases and diabetes. J Clin Periodontol. 2018;45(2):132-145.
-D'Aiuto F, et al. Systemic effects of periodontitis treatment in patients with type 2 diabetes. Lancet Diabetes Endocrinol. 2018;6(12):954-965.
-中华口腔医学会牙周病学专业委员会. 糖尿病与牙周病关系的专家共识. 中华口腔医学杂志. 2019.
-仅供健康教育参考，不能替代专业医疗建议。
+<!-- ===== 机制图解（CTML 核心：多媒体 + 空间邻近） ===== -->
+<section id="mechanism">
+  <span class="section-tag">🔬 双向机制</span>
+  <h2>口腔和血糖，为什么会互相影响？</h2>
+  <p class="subtitle">一张图 + 两段话，把这个"恶性循环"说清楚</p>
 
-🦷 口腔健康与糖尿病科普指南
+  <!-- 可视化图解 -->
+  <div class="mechanism-diagram fade-in">
+    <div class="diagram-inner">
+      <!-- 左列：高血糖 → 口腔 -->
+      <div class="diagram-col left">
+        <div class="col-title">🩸 高血糖 → 口腔受损</div>
+        <div class="diagram-step">
+          <span class="ds-icon">🩸</span> 血糖长期偏高，损害牙龈微小血管
+        </div>
+        <div class="diagram-step">
+          <span class="ds-icon">🛡️</span> 免疫细胞功能受抑制，杀菌能力下降
+        </div>
+        <div class="diagram-step">
+          <span class="ds-icon">🐛</span> 口腔细菌大量繁殖，牙龈发炎出血
+        </div>
+        <div class="diagram-step">
+          <span class="ds-icon">🩹</span> 伤口愈合变慢，拔牙/溃疡不易恢复
+        </div>
+      </div>
 
-内容基于医学文献，仅供参考，不能替代专业医疗建议。
+      <!-- 中间：循环 -->
+      <div class="diagram-arrows">
+        <div class="diagram-arrow">
+          <span class="arrow-line">→</span>
+          <span>血糖高<br>伤口腔</span>
+        </div>
+        <div class="diagram-center">
+          <div class="diagram-cycle">恶性<br>循环</div>
+        </div>
+        <div class="diagram-arrow">
+          <span class="arrow-line">→</span>
+          <span>口腔炎<br>扰血糖</span>
+        </div>
+      </div>
 
-如有健康问题，请咨询医生或牙医。
+      <!-- 右列：口腔 → 高血糖 -->
+      <div class="diagram-col right">
+        <div class="col-title">🦷 口腔发炎 → 血糖难控</div>
+        <div class="diagram-step">
+          <span class="ds-icon">🔥</span> 牙周发炎，释放炎症因子进入血液
+        </div>
+        <div class="diagram-step">
+          <span class="ds-icon">🌊</span> 炎症因子随血液循环到达全身
+        </div>
+        <div class="diagram-step">
+          <span class="ds-icon">🚫</span> 干扰胰岛素正常工作（胰岛素抵抗加重）
+        </div>
+        <div class="diagram-step">
+          <span class="ds-icon">📈</span> 血糖更难降下来，形成恶性循环
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 详细文字说明 -->
+  <div class="mechanism-card fade-in">
+    <div class="mc-header">
+      <span class="mc-icon">🩸→🦷</span>
+      <h3>方向一：血糖高，口腔先遭殃</h3>
+    </div>
+    <p>长期高血糖会损害牙龈里密集的<strong>微小血管</strong>，让牙龈得不到足够营养；同时免疫细胞在高糖环境中变得"迟钝"，杀菌能力下降。于是细菌趁虚而入，牙龈发炎、出血，伤口愈合也变慢。</p>
+  </div>
+
+  <div class="mechanism-card fade-in" style="border-left-color: #f87171;">
+    <div class="mc-header">
+      <span class="mc-icon">🦷→🩸</span>
+      <h3>方向二：牙周发炎，血糖也受牵连</h3>
+    </div>
+    <p>发炎的牙龈会持续释放<strong>炎症因子</strong>（如 TNF-α、IL-6）。这些"发炎信号弹"进入血液后流遍全身，干扰胰岛素降低血糖的过程——医学上称为<strong>"胰岛素抵抗"</strong>，结果就是血糖更难管理。</p>
+  </div>
+
+  <!-- Key Message -->
+  <div class="key-message fade-in">
+    <div class="km-icon">🔑</div>
+    <div class="km-title">一句话记住</div>
+    <div class="km-body">
+      血糖高 → 口腔容易发炎 → 炎症因子进入血液 → 血糖更难降 → <strong>恶性循环开始</strong><br><br>
+      但好消息是：<span class="km-highlight">打断任何一环，都能帮到另一边</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 危险信号 ===== -->
+<section id="signals">
+  <span class="section-tag">⚠️ 早期预警</span>
+  <h2>这些口腔信号，提醒你关注血糖</h2>
+  <p class="subtitle">出现以下任何一种情况，建议尽早看牙医，同时查一下血糖</p>
+
+  <div class="signal-grid">
+    <div class="signal-card fade-in">
+      <div class="sig-icon">🩸</div>
+      <div class="sig-content">
+        <h4>刷牙经常出血</h4>
+        <p>牙刷或泡沫里带血丝——不是"上火"，可能是牙龈炎的信号</p>
+      </div>
+    </div>
+    <div class="signal-card fade-in">
+      <div class="sig-icon">🔴</div>
+      <div class="sig-content">
+        <h4>牙龈红肿、按压痛</h4>
+        <p>牙龈颜色暗红发亮，轻轻一碰就疼，说明正在发炎</p>
+      </div>
+    </div>
+    <div class="signal-card fade-in">
+      <div class="sig-icon">🦷</div>
+      <div class="sig-content">
+        <h4>牙齿松动、咀嚼无力</h4>
+        <p>牙齿开始晃动，吃硬东西用不上力——牙周组织可能已受损</p>
+      </div>
+    </div>
+    <div class="signal-card fade-in">
+      <div class="sig-icon">🩹</div>
+      <div class="sig-content">
+        <h4>口腔溃疡反复不愈</h4>
+        <p>溃疡超过2周还在，糖尿病患者需特别警惕</p>
+      </div>
+    </div>
+    <div class="signal-card fade-in">
+      <div class="sig-icon">🏜️</div>
+      <div class="sig-content">
+        <h4>长期口干</h4>
+        <p>唾液减少不仅不适，还会让细菌更容易滋生</p>
+      </div>
+    </div>
+    <div class="signal-card fade-in">
+      <div class="sig-icon">😷</div>
+      <div class="sig-content">
+        <h4>持续口腔异味</h4>
+        <p>顽固口臭可能是牙周感染或血糖控制不佳的表现</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="signal-alert fade-in">
+    <div class="alert-icon">💡</div>
+    <p>以上任何症状出现，除了看牙医，也建议测一下血糖。口腔问题有时是血糖异常的"最早信号"。</p>
+  </div>
+</section>
+
+<!-- ===== 护牙建议 ===== -->
+<section id="tips">
+  <span class="section-tag">✅ 行动指南</span>
+  <h2>5 件事，护牙也护血糖</h2>
+  <p class="subtitle">简单实用，今天就能开始</p>
+
+  <div class="tips-wrapper">
+    <div class="tip-card fade-in">
+      <div class="tip-num">1</div>
+      <h4>认真刷牙</h4>
+      <p>早晚各一次，每次≥2分钟。牙刷斜45°贴牙龈轻刷，别忘了舌头</p>
+    </div>
+    <div class="tip-card fade-in">
+      <div class="tip-num">2</div>
+      <h4>每天用牙线</h4>
+      <p>牙刷刷不到牙缝，牙线/牙缝刷每天至少一次</p>
+    </div>
+    <div class="tip-card fade-in">
+      <div class="tip-num">3</div>
+      <h4>定期洗牙</h4>
+      <p>每半年到一年洗一次，清除刷不掉的牙结石</p>
+    </div>
+    <div class="tip-card fade-in">
+      <div class="tip-num">4</div>
+      <h4>告诉牙医病情</h4>
+      <p>看牙时主动告知有糖尿病和用药情况，确保安全治疗</p>
+    </div>
+    <div class="tip-card fade-in">
+      <div class="tip-num">5</div>
+      <h4>管好血糖</h4>
+      <p>血糖稳了，口腔问题自然减少。按时吃药、规律测糖、健康饮食</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 知识问答 ===== -->
+<section id="quiz">
+  <span class="section-tag">🧠 自测一下</span>
+  <h2>你了解多少？</h2>
+  <p class="subtitle">6 道题，看看你对口腔与糖尿病的关系掌握了多少</p>
+
+  <div class="quiz-container" id="quizContainer">
+    <div class="quiz-progress">
+      <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+      <span class="progress-text" id="progressText">0/6</span>
+    </div>
+    <div id="quizBody"></div>
+    <div class="quiz-btn-row">
+      <button class="btn" id="nextBtn" onclick="nextQuestion()" style="display:none;">下一题 →</button>
+    </div>
+    <div class="quiz-result" id="quizResult">
+      <div class="score-circle">
+        <div class="score-num" id="scoreNum">0</div>
+        <div class="score-label">/ 6</div>
+      </div>
+      <p id="scoreText"></p>
+      <button class="btn btn-outline" onclick="restartQuiz()" style="margin-top:16px;">再做一次</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 风险自测 ===== -->
+<section id="assess">
+  <span class="section-tag">📋 风险评估</span>
+  <h2>口腔健康风险自评</h2>
+  <p class="subtitle">勾选你目前的情况，了解自己的风险等级</p>
+
+  <div class="assess-form" id="assessForm">
+    <p class="assess-intro">请如实勾选符合你情况的选项：</p>
+    <div class="assess-grid">
+      <div class="assess-item"><label><input type="checkbox" value="2"> 我有糖尿病（1型或2型）</label></div>
+      <div class="assess-item"><label><input type="checkbox" value="2"> 我的血糖控制不理想（HbA1c > 7%）</label></div>
+      <div class="assess-item"><label><input type="checkbox" value="2"> 刷牙时经常出血</label></div>
+      <div class="assess-item"><label><input type="checkbox" value="2"> 牙龈经常红肿或疼痛</label></div>
+      <div class="assess-item"><label><input type="checkbox" value="3"> 有牙齿松动的情况</label></div>
+      <div class="assess-item"><label><input type="checkbox" value="1"> 口腔溃疡反复发作</label></div>
+      <div class="assess-item"><label><input type="checkbox" value="1"> 经常觉得口干</label></div>
+      <div class="assess-item"><label><input type="checkbox" value="1"> 有持续的口腔异味</label></div>
+      <div class="assess-item"><label><input type="checkbox" value="1"> 超过一年没看过牙医</label></div>
+      <div class="assess-item"><label><input type="checkbox" value="1"> 吸烟</label></div>
+    </div>
+    <div style="text-align:center;margin-top:24px;">
+      <button class="btn" onclick="submitAssess()">查看结果</button>
+    </div>
+    <div class="assess-result" id="assessResult"></div>
+  </div>
+</section>
+
+<!-- ===== 参考资料 ===== -->
+<section id="refs" style="padding-top:50px;">
+  <div class="ref-section fade-in">
+    <h3>📖 内容参考</h3>
+    <ol>
+      <li>Preshaw PM, et al. Periodontitis and diabetes: a two-way relationship. <em>Diabetologia</em>. 2012;55(1):21-31.</li>
+      <li>Sanz M, et al. Scientific evidence on the links between periodontal diseases and diabetes. <em>J Clin Periodontol</em>. 2018;45(2):132-145.</li>
+      <li>D'Aiuto F, et al. Systemic effects of periodontitis treatment in patients with type 2 diabetes. <em>Lancet Diabetes Endocrinol</em>. 2018;6(12):954-965.</li>
+      <li>中华口腔医学会牙周病学专业委员会. 糖尿病与牙周病关系的专家共识. <em>中华口腔医学杂志</em>. 2019.</li>
+    </ol>
+    <p style="font-size:13px;color:var(--gray-400);margin-top:12px;">仅供健康教育参考，不能替代专业医疗建议。</p>
+  </div>
+</section>
+
+<!-- ===== 底部 ===== -->
+<footer>
+  <p>🦷 口腔健康与糖尿病科普指南</p>
+  <p style="margin-top:8px;">内容基于医学文献，仅供参考，不能替代专业医疗建议。</p>
+  <p style="margin-top:4px;">如有健康问题，请咨询医生或牙医。</p>
+</footer>
+
+<!-- ===== JavaScript ===== -->
+<script>
+// ===== 导航栏滚动阴影 =====
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 10);
+});
+
+// ===== 滚动淡入动画 =====
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// ===== 导航高亮 =====
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = [...document.querySelectorAll('section[id]')].filter(s => s.id !== 'hero');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 120) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+  });
+});
+
+// ===== 知识问答 =====
+const quizData = [
+  {
+    q: "糖尿病和口腔健康有关系吗？",
+    opts: ["没有关系，是两回事", "有关系，会互相影响", "只有糖尿病影响口腔，反过来不会", "只有口腔影响糖尿病，反过来不会"],
+    ans: 1,
+    explain: "糖尿病和口腔健康是<strong>双向关系</strong>：血糖高会让口腔更容易出问题，而牙周炎产生的炎症也会影响血糖控制。"
+  },
+  {
+    q: "血糖高会对口腔产生什么影响？",
+    opts: ["没什么影响", "牙齿会变黄", "牙龈更容易发炎、出血，伤口愈合变慢", "只会让嘴巴干"],
+    ans: 2,
+    explain: "高血糖会损害牙龈小血管、降低免疫力、让细菌更容易繁殖，同时伤口愈合也会变慢。"
+  },
+  {
+    q: "牙周炎为什么会影响血糖？",
+    opts: ["因为牙疼让人吃不下饭", "发炎产生的炎症因子进入血液，干扰胰岛素工作", "牙周炎会让人大笑消耗血糖", "没有科学依据"],
+    ans: 1,
+    explain: "牙周炎释放的炎症因子（如TNF-α、IL-6）随血液流向全身，<strong>加重胰岛素抵抗</strong>，让血糖更难控制。"
+  },
+  {
+    q: "糖尿病患者刷牙出血，应该怎么办？",
+    opts: ["停止刷牙，避免刺激出血的部位", "继续轻柔刷，同时尽快看牙医", "换一种牙膏就行", "喝凉茶降火"],
+    ans: 1,
+    explain: "刷牙出血说明牙龈有炎症，<strong>不能因为出血就不刷牙</strong>（会让细菌更多），应该继续轻柔刷牙并及时看牙医。"
+  },
+  {
+    q: "糖尿病患者建议多久看一次牙医？",
+    opts: ["牙疼了才需要看", "每1-2年一次", "每半年到一年一次", "不需要特别看"],
+    ans: 2,
+    explain: "糖尿病患者建议<strong>每半年到一年</strong>做一次口腔检查和洗牙，早发现早处理，避免小问题拖成大问题。"
+  },
+  {
+    q: "控制好血糖，对口腔健康有帮助吗？",
+    opts: ["没有帮助", "有一点帮助", "帮助很大，血糖稳了口腔问题也会减少", "只对牙齿好，对牙龈没用"],
+    ans: 2,
+    explain: "血糖控制是基础。血糖稳定了，牙龈的血液循环和免疫功能都会改善，口腔问题自然会减少。"
+  }
+];
+
+let currentQ = 0, score = 0, answered = false;
+
+function renderQuestion() {
+  const d = quizData[currentQ];
+  const pct = (currentQ / quizData.length * 100);
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('progressText').textContent = currentQ + '/' + quizData.length;
+
+  let html = `<div class="quiz-question">${d.q}</div><div class="quiz-options">`;
+  d.opts.forEach((opt, i) => {
+    html += `<label><input type="radio" name="q" value="${i}"> ${opt}</label>`;
+  });
+  html += '</div><div class="quiz-feedback" id="feedback"></div>';
+  document.getElementById('quizBody').innerHTML = html;
+  document.getElementById('nextBtn').style.display = 'none';
+  answered = false;
+
+  document.querySelectorAll('input[name="q"]').forEach(radio => {
+    radio.addEventListener('change', () => {
+      if (answered) return;
+      answered = true;
+      const val = parseInt(radio.value);
+      const fb = document.getElementById('feedback');
+      const labels = document.querySelectorAll('.quiz-options label');
+
+      if (val === d.ans) {
+        score++;
+        fb.className = 'quiz-feedback correct show';
+        fb.innerHTML = '✅ <strong>回答正确！</strong><br>' + d.explain;
+        labels[val].classList.add('selected-correct');
+      } else {
+        fb.className = 'quiz-feedback wrong show';
+        fb.innerHTML = '❌ <strong>回答错误。</strong>正确答案：' + d.opts[d.ans] + '<br>' + d.explain;
+        labels[val].classList.add('selected-wrong');
+        labels[d.ans].classList.add('selected-correct');
+      }
+
+      document.querySelectorAll('input[name="q"]').forEach(r => r.disabled = true);
+      const btn = document.getElementById('nextBtn');
+      btn.style.display = 'inline-block';
+      btn.textContent = currentQ === quizData.length - 1 ? '查看成绩 →' : '下一题 →';
+    });
+  });
+}
+
+function nextQuestion() {
+  currentQ++;
+  if (currentQ >= quizData.length) {
+    showResult();
+    return;
+  }
+  renderQuestion();
+}
+
+function showResult() {
+  document.getElementById('quizBody').style.display = 'none';
+  document.getElementById('nextBtn').style.display = 'none';
+  document.getElementById('progressFill').style.width = '100%';
+  document.getElementById('progressText').textContent = quizData.length + '/' + quizData.length;
+  const result = document.getElementById('quizResult');
+  result.style.display = 'block';
+  document.getElementById('scoreNum').textContent = score;
+
+  const pct = Math.round(score / quizData.length * 100);
+  let msg = '';
+  if (score === quizData.length) {
+    msg = '🏆 全部答对！你对口腔与糖尿病的关系非常了解！';
+  } else if (score >= 4) {
+    msg = '👍 很不错！掌握了大部分知识，再看看错的那几题巩固一下吧。';
+  } else {
+    msg = '📖 还有提升空间，建议回顾上面的科普内容再来挑战。';
+  }
+  document.getElementById('scoreText').textContent = msg;
+}
+
+function restartQuiz() {
+  currentQ = 0; score = 0;
+  document.getElementById('quizBody').style.display = 'block';
+  document.getElementById('quizResult').style.display = 'none';
+  renderQuestion();
+}
+
+renderQuestion();
+
+// ===== 风险自测 =====
+function submitAssess() {
+  const checks = document.querySelectorAll('#assessForm input[type="checkbox"]:checked');
+  let total = 0;
+  checks.forEach(c => total += parseInt(c.value));
+
+  const result = document.getElementById('assessResult');
+  result.classList.add('show');
+
+  if (checks.length === 0) {
+    result.className = 'assess-result low show';
+    result.innerHTML = '<div class="result-icon">📝</div><h3>请先勾选你的情况</h3><p>根据实际情况勾选后再提交哦。</p>';
+    return;
+  }
+
+  if (total <= 3) {
+    result.className = 'assess-result low show';
+    result.innerHTML = `
+      <div class="result-icon">😊</div><h3>风险较低</h3>
+      <p>你目前的情况还不错！继续保持：</p>
+      <p>• 每天早晚刷牙 + 牙线<br>• 每半年到一年口腔检查<br>• 保持血糖稳定</p>
+    `;
+  } else if (total <= 7) {
+    result.className = 'assess-result mid show';
+    result.innerHTML = `
+      <div class="result-icon">⚠️</div><h3>中等风险</h3>
+      <p>有一些需要关注的信号，建议：</p>
+      <p>• 尽快预约牙科检查<br>• 关注血糖控制情况<br>• 加强日常口腔护理<br>• 如未查过血糖，建议一并检查</p>
+    `;
+  } else {
+    result.className = 'assess-result high show';
+    result.innerHTML = `
+      <div class="result-icon">🚨</div><h3>风险较高</h3>
+      <p>有多个需重视的信号，<strong>强烈建议</strong>：</p>
+      <p>• <strong>尽快</strong>看牙医，检查牙周情况<br>• 同时查血糖（空腹血糖 + 糖化血红蛋白）<br>• 告诉牙医你的血糖情况<br>• 认真对待每一次刷牙，不因出血就停止</p>
+      <p style="margin-top:8px;color:#991b1b;font-weight:700;">越早干预，效果越好。</p>
+    `;
+  }
+}
+</script>
+
+</body>
+</html>
