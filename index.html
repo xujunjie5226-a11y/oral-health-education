@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>口腔健康与糖尿病 — 科普指南</title>
+<style>
+/* ===== 基础样式 ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: -apple-system, "Microsoft YaHei", "PingFang SC", sans-serif;
+  color: #333;
+  line-height: 1.8;
+  background: #f7fbfa;
+}
+
+/* ===== 导航栏 ===== */
+nav {
+  position: fixed; top: 0; width: 100%; z-index: 100;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+}
+.nav-inner {
+  max-width: 1000px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 24px;
+}
+.nav-logo { font-size: 18px; font-weight: 700; color: #0d9488; }
+.nav-links { display: flex; gap: 20px; flex-wrap: wrap; }
+.nav-links a {
+  text-decoration: none; color: #555; font-size: 14px;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: #0d9488; }
+
+/* ===== 通用 section ===== */
+section {
+  max-width: 900px; margin: 0 auto;
+  padding: 80px 24px 40px;
+}
+.section-tag {
+  display: inline-block;
+  background: #ccfbf1; color: #0d9488;
+  font-size: 13px; font-weight: 600;
+  padding: 4px 14px; border-radius: 20px;
+  margin-bottom: 12px;
+}
+section h2 {
+  font-size: 28px; color: #134e4a;
+  margin-bottom: 8px;
+}
+section .subtitle {
+  color: #6b7280; font-size: 15px;
+  margin-bottom: 32px;
+}
+.card {
+  background: #fff; border-radius: 16px;
+  padding: 28px; margin-bottom: 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  border: 1px solid #e0f2f1;
+}
+.card h3 {
+  font-size: 18px; color: #115e59;
+  margin-bottom: 10px;
+}
+.card p, .card li {
+  font-size: 15px; color: #4b5563;
+}
+.card ul { padding-left: 20px; }
+.card ul li { margin-bottom: 6px; }
+
+/* ===== 首页 Hero ===== */
+#hero {
+  min-height: 100vh;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center;
+  background: linear-gradient(160deg, #f0fdfa 0%, #ccfbf1 40%, #99f6e4 100%);
+  padding-top: 80px;
+}
+.hero-content { max-width: 600px; }
+.hero-emoji { font-size: 64px; margin-bottom: 16px; }
+.hero-content h1 {
+  font-size: 36px; color: #134e4a;
+  margin-bottom: 12px; line-height: 1.3;
+}
+.hero-content p {
+  font-size: 17px; color: #6b7280;
+  margin-bottom: 32px;
+}
+.btn {
+  display: inline-block;
+  background: #0d9488; color: #fff;
+  padding: 14px 32px; border-radius: 30px;
+  text-decoration: none; font-size: 16px; font-weight: 600;
+  transition: background 0.2s, transform 0.1s;
+  border: none; cursor: pointer;
+}
+.btn:hover { background: #0f766e; transform: translateY(-1px); }
+.btn-outline {
+  background: transparent; color: #0d9488;
+  border: 2px solid #0d9488;
+}
+.btn-outline:hover { background: #f0fdfa; }
+
+/* ===== 机制科普 ===== */
+.mechanism-step {
+  display: flex; gap: 20px; align-items: flex-start;
+  margin-bottom: 24px;
+  padding: 24px; background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  border-left: 4px solid #0d9488;
+}
+.step-icon {
+  font-size: 40px; flex-shrink: 0;
+  width: 60px; text-align: center;
+}
+.step-content h3 {
+  font-size: 17px; color: #115e59;
+  margin-bottom: 6px;
+}
+.step-content p {
+  font-size: 15px; color: #4b5563;
+}
+.direction-arrow {
+  text-align: center; font-size: 28px;
+  color: #0d9488; margin: 8px 0;
+  opacity: 0.6;
+}
+.highlight-box {
+  background: linear-gradient(135deg, #f0fdfa, #ccfbf1);
+  border: 2px dashed #5eead4;
+  border-radius: 16px;
+  padding: 24px; margin: 28px 0;
+  text-align: center;
+}
+.highlight-box .big-text {
+  font-size: 18px; font-weight: 700;
+  color: #134e4a;
+}
+.highlight-box .small-text {
+  font-size: 14px; color: #6b7280;
+  margin-top: 6px;
+}
+
+/* ===== 危险信号 ===== */
+.signal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.signal-card {
+  background: #fff; border-radius: 14px;
+  padding: 22px; text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  border: 1px solid #e0f2f1;
+  transition: transform 0.2s;
+}
+.signal-card:hover { transform: translateY(-3px); }
+.signal-emoji { font-size: 36px; margin-bottom: 8px; }
+.signal-card h4 {
+  font-size: 16px; color: #115e59;
+  margin-bottom: 6px;
+}
+.signal-card p {
+  font-size: 14px; color: #6b7280;
+}
+.signal-warning {
+  background: #fef2f2; border: 1px solid #fecaca;
+  border-radius: 14px; padding: 20px 24px;
+  margin-top: 24px; display: flex;
+  align-items: center; gap: 12px;
+}
+.signal-warning .warn-icon { font-size: 28px; }
+.signal-warning p {
+  font-size: 15px; color: #991b1b; font-weight: 500;
+}
+
+/* ===== 护牙建议 ===== */
+.tip-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.tip-card {
+  background: #fff; border-radius: 14px;
+  padding: 24px; text-align: center;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  border-top: 4px solid #5eead4;
+}
+.tip-num {
+  display: inline-block;
+  width: 32px; height: 32px; line-height: 32px;
+  background: #0d9488; color: #fff;
+  border-radius: 50%; font-size: 16px;
+  font-weight: 700; margin-bottom: 10px;
+}
+.tip-card h4 {
+  font-size: 16px; color: #115e59;
+  margin-bottom: 8px;
+}
+.tip-card p {
+  font-size: 14px; color: #6b7280;
+}
+
+/* ===== 知识问答 ===== */
+.quiz-container {
+  background: #fff; border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  border: 1px solid #e0f2f1;
+}
+.progress-bar {
+  height: 6px; background: #e5e7eb;
+  border-radius: 3px; margin-bottom: 24px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%; background: linear-gradient(90deg, #5eead4, #0d9488);
+  border-radius: 3px; transition: width 0.4s;
+}
+.quiz-question {
+  font-size: 17px; font-weight: 600;
+  color: #134e4a; margin-bottom: 18px;
+}
+.quiz-options label {
+  display: block;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: border-color 0.2s, background 0.2s;
+}
+.quiz-options label:hover {
+  border-color: #5eead4; background: #f0fdfa;
+}
+.quiz-options input[type="radio"] {
+  margin-right: 10px; accent-color: #0d9488;
+}
+.quiz-feedback {
+  margin-top: 16px; padding: 16px;
+  border-radius: 12px; font-size: 14px;
+  display: none;
+}
+.quiz-feedback.correct {
+  background: #f0fdf4; border: 1px solid #86efac;
+  color: #166534;
+}
+.quiz-feedback.wrong {
+  background: #fef2f2; border: 1px solid #fca5a5;
+  color: #991b1b;
+}
+.quiz-btn-row {
+  margin-top: 20px; display: flex;
+  gap: 12px; justify-content: center;
+}
+.quiz-result {
+  text-align: center; padding: 20px;
+  display: none;
+}
+.quiz-result .score {
+  font-size: 48px; font-weight: 800;
+  color: #0d9488;
+}
+.quiz-result p {
+  font-size: 16px; color: #6b7280;
+  margin-top: 8px;
+}
+
+/* ===== 风险自测 ===== */
+.assess-form {
+  background: #fff; border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+  border: 1px solid #e0f2f1;
+}
+.assess-item {
+  padding: 14px 0;
+  border-bottom: 1px solid #f3f4f6;
+}
+.assess-item:last-of-type { border-bottom: none; }
+.assess-item label {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 15px; cursor: pointer;
+}
+.assess-item input[type="checkbox"] {
+  width: 20px; height: 20px; accent-color: #0d9488;
+}
+.assess-result {
+  margin-top: 24px; padding: 24px;
+  border-radius: 14px; display: none;
+}
+.assess-result.low {
+  background: #f0fdf4; border: 2px solid #86efac;
+}
+.assess-result.mid {
+  background: #fffbeb; border: 2px solid #fcd34d;
+}
+.assess-result.high {
+  background: #fef2f2; border: 2px solid #fca5a5;
+}
+.assess-result h3 {
+  font-size: 18px; margin-bottom: 8px;
+}
+.assess-result p {
+  font-size: 15px; color: #4b5563;
+  margin-bottom: 6px;
+}
+.assess-result .result-icon {
+  font-size: 36px; margin-bottom: 8px;
+}
+
+/* ===== 底部 ===== */
+footer {
+  text-align: center; padding: 40px 24px;
+  background: #134e4a; color: #99f6e4;
+  font-size: 14px; margin-top: 40px;
+}
+footer a { color: #5eead4; }
+
+/* ===== 响应式 ===== */
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  section { padding: 60px 16px 30px; }
+  .hero-content h1 { font-size: 26px; }
+  .mechanism-step { flex-direction: column; gap: 8px; }
+  .signal-grid { grid-template-columns: 1fr; }
+  .tip-cards { grid-template-columns: 1fr 1fr; }
+}
+
+/* ===== 动画 ===== */
+.fade-in {
+  opacity: 0; transform: translateY(20px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+.fade-in.visible {
+  opacity: 1; transform: translateY(0);
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 导航栏 ===== -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">🦷 口腔与血糖</div>
+    <div class="nav-links">
+      <a href="#mechanism">科普机制</a>
+      <a href="#signals">危险信号</a>
+      <a href="#tips">护牙建议</a>
+      <a href="#quiz">知识问答</a>
+      <a href="#assess">风险自测</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== 首页 ===== -->
+<section id="hero">
+  <div class="hero-content">
+    <div class="hero-emoji">🦷💉</div>
+    <h1>你的牙，可能也在影响血糖</h1>
+    <p>很多人不知道，口腔健康和糖尿病有着密切的关系。<br>了解它们之间的联系，从今天开始更好地保护自己。</p>
+    <a href="#mechanism" class="btn">开始了解 ↓</a>
+  </div>
+</section>
+
+<!-- ===== 机制科普 ===== -->
+<section id="mechanism">
+  <span class="section-tag">🔬 科学机制</span>
+  <h2>糖尿病和口腔，为什么会互相影响？</h2>
+  <p class="subtitle">用最简单的话说清楚——它们之间是一条"双向马路"</p>
+
+  <!-- 方向A：糖尿病→口腔 -->
+  <div class="mechanism-step fade-in">
+    <div class="step-icon">🩸</div>
+    <div class="step-content">
+      <h3>血糖高 → 口腔更容易出问题</h3>
+      <p>血糖长期偏高，身体里的<strong>小血管</strong>会受损。牙龈里的血管又细又密，特别容易受影响。血管受损后，牙龈得到的营养变少，<strong>抵抗细菌的能力也变差了</strong>。</p>
+    </div>
+  </div>
+
+  <div class="mechanism-step fade-in">
+    <div class="step-icon">🦠</div>
+    <div class="step-content">
+      <h3>免疫力下降，细菌更容易"闹事"</h3>
+      <p>高血糖还会让身体的<strong>免疫细胞变"迟钝"</strong>，杀灭细菌的效率降低。口腔里本来就有很多细菌，免疫力一弱，细菌就趁机大量繁殖，牙龈更容易发炎、出血。</p>
+    </div>
+  </div>
+
+  <div class="mechanism-step fade-in">
+    <div class="step-icon">🩹</div>
+    <div class="step-content">
+      <h3>伤口愈合变慢</h3>
+      <p>糖尿病患者拔牙或牙龈受伤后，<strong>愈合时间比普通人更长</strong>。这是因为高血糖影响了身体修复组织的能力，小小的口腔伤口也可能拖很久才好。</p>
+    </div>
+  </div>
+
+  <div class="direction-arrow">⬇️ 反过来也一样 ⬇️</div>
+
+  <!-- 方向B：口腔→糖尿病 -->
+  <div class="mechanism-step fade-in">
+    <div class="step-icon">🔥</div>
+    <div class="step-content">
+      <h3>牙周炎 → 全身慢性发炎</h3>
+      <p>牙周炎不只是"牙的事"。发炎的牙龈会不断释放<strong>炎症因子</strong>（可以理解为"发炎信号弹"），这些信号弹进入血液，<strong>随着血液循环流遍全身</strong>。</p>
+    </div>
+  </div>
+
+  <div class="mechanism-step fade-in">
+    <div class="step-icon">📉</div>
+    <div class="step-content">
+      <h3>炎症因子 → 血糖更难控制</h3>
+      <p>这些炎症因子会干扰身体利用胰岛素的过程（叫做<strong>"胰岛素抵抗"</strong>），简单说就是：胰岛素本来是帮身体降低血糖的，但炎症因子让它"使不上劲"，结果<strong>血糖就更难降下来</strong>了。</p>
+    </div>
+  </div>
+
+  <div class="highlight-box fade-in">
+    <p class="big-text">🔑 一句话总结</p>
+    <p class="small-text">血糖高 → 口腔容易发炎；口腔发炎 → 血糖更难控制。<br>这是一条<strong>恶性循环</strong>，但好消息是——<strong>打断任何一环，都能帮到另一边</strong>。</p>
+  </div>
+</section>
+
+<!-- ===== 危险信号 ===== -->
+<section id="signals">
+  <span class="section-tag">⚠️ 危险信号</span>
+  <h2>这些口腔信号，糖尿病患者要留意</h2>
+  <p class="subtitle">出现以下情况，建议尽早看牙医，同时关注血糖</p>
+
+  <div class="signal-grid">
+    <div class="signal-card fade-in">
+      <div class="signal-emoji">🩸</div>
+      <h4>刷牙经常出血</h4>
+      <p>牙刷上、吐出来的泡沫里带血丝，不是"上火"那么简单</p>
+    </div>
+    <div class="signal-card fade-in">
+      <div class="signal-emoji">😰</div>
+      <h4>牙龈红肿、按压痛</h4>
+      <p>牙龈颜色发暗红，碰一下就疼，说明正在发炎</p>
+    </div>
+    <div class="signal-card fade-in">
+      <div class="signal-emoji">😬</div>
+      <h4>牙齿松动、咬东西没力</h4>
+      <p>牙齿开始晃动，吃硬东西使不上劲，可能是牙周已经受损</p>
+    </div>
+    <div class="signal-card fade-in">
+      <div class="signal-emoji">👄</div>
+      <h4>口腔溃疡反复不好</h4>
+      <p>溃疡超过两周还不愈合，糖尿病患者要特别警惕</p>
+    </div>
+    <div class="signal-card fade-in">
+      <div class="signal-emoji">🌵</div>
+      <h4>嘴巴总是干</h4>
+      <p>长期口干不仅难受，还会让口腔更容易滋生细菌</p>
+    </div>
+    <div class="signal-card fade-in">
+      <div class="signal-emoji">😷</div>
+      <h4>嘴里有异味</h4>
+      <p>持续的口臭可能是牙周感染或血糖控制不佳的信号</p>
+    </div>
+  </div>
+
+  <div class="signal-warning fade-in">
+    <div class="warn-icon">💡</div>
+    <p>出现以上任何一种情况，除了看牙医，也建议查一下血糖。口腔问题有时候是血糖异常的"早期提醒"。</p>
+  </div>
+</section>
+
+<!-- ===== 护牙建议 ===== -->
+<section id="tips">
+  <span class="section-tag">✅ 行动指南</span>
+  <h2>做好这5件事，牙好血糖好</h2>
+  <p class="subtitle">简单、实用、今天就能开始做</p>
+
+  <div class="tip-cards">
+    <div class="tip-card fade-in">
+      <div class="tip-num">1</div>
+      <h4>认真刷牙</h4>
+      <p>每天早晚各一次，每次至少2分钟。牙刷斜45度贴着牙龈轻轻刷，别忘了刷舌头</p>
+    </div>
+    <div class="tip-card fade-in">
+      <div class="tip-num">2</div>
+      <h4>用牙线</h4>
+      <p>牙缝里的脏东西牙刷刷不到，每天至少用一次牙线或牙缝刷</p>
+    </div>
+    <div class="tip-card fade-in">
+      <div class="tip-num">3</div>
+      <h4>定期洗牙</h4>
+      <p>建议每半年到一年洗一次牙，清除牙刷刷不掉的牙结石</p>
+    </div>
+    <div class="tip-card fade-in">
+      <div class="tip-num">4</div>
+      <h4>告诉牙医你有糖尿病</h4>
+      <p>看牙时主动告知血糖情况和用药，方便医生制定安全的治疗方案</p>
+    </div>
+    <div class="tip-card fade-in">
+      <div class="tip-num">5</div>
+      <h4>管好血糖</h4>
+      <p>血糖控制好了，口腔问题自然会减少。按时吃药、定期测血糖、饮食规律</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 知识问答 ===== -->
+<section id="quiz">
+  <span class="section-tag">🧠 知识问答</span>
+  <h2>测一测，你了解多少？</h2>
+  <p class="subtitle">6道题，看看你对口腔和糖尿病的关系知道多少</p>
+
+  <div class="quiz-container" id="quizContainer">
+    <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+    <div id="quizBody"></div>
+    <div class="quiz-btn-row">
+      <button class="btn" id="nextBtn" onclick="nextQuestion()" style="display:none;">下一题 →</button>
+    </div>
+    <div class="quiz-result" id="quizResult">
+      <div class="score" id="scoreNum"></div>
+      <p id="scoreText"></p>
+      <button class="btn btn-outline" onclick="restartQuiz()" style="margin-top:16px;">再做一次</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 风险自测 ===== -->
+<section id="assess">
+  <span class="section-tag">📋 风险自测</span>
+  <h2>口腔健康风险自评</h2>
+  <p class="subtitle">勾选你目前有的情况，了解自己的风险等级</p>
+
+  <div class="assess-form" id="assessForm">
+    <p style="font-size:15px;color:#6b7280;margin-bottom:16px;">请勾选符合你情况的选项：</p>
+
+    <div class="assess-item">
+      <label><input type="checkbox" value="2"> 我有糖尿病（1型或2型）</label>
+    </div>
+    <div class="assess-item">
+      <label><input type="checkbox" value="2"> 我的血糖控制得不太好（糖化血红蛋白 > 7%）</label>
+    </div>
+    <div class="assess-item">
+      <label><input type="checkbox" value="2"> 刷牙时经常出血</label>
+    </div>
+    <div class="assess-item">
+      <label><input type="checkbox" value="2"> 牙龈经常红肿或疼痛</label>
+    </div>
+    <div class="assess-item">
+      <label><input type="checkbox" value="3"> 有牙齿松动的情况</label>
+    </div>
+    <div class="assess-item">
+      <label><input type="checkbox" value="1"> 口腔溃疡经常反复发作</label>
+    </div>
+    <div class="assess-item">
+      <label><input type="checkbox" value="1"> 经常觉得口干</label>
+    </div>
+    <div class="assess-item">
+      <label><input type="checkbox" value="1"> 有持续的口臭</label>
+    </div>
+    <div class="assess-item">
+      <label><input type="checkbox" value="1"> 超过一年没看过牙医</label>
+    </div>
+    <div class="assess-item">
+      <label><input type="checkbox" value="1"> 吸烟</label>
+    </div>
+
+    <div style="text-align:center;margin-top:20px;">
+      <button class="btn" onclick="submitAssess()">查看结果</button>
+    </div>
+
+    <div class="assess-result" id="assessResult"></div>
+  </div>
+</section>
+
+<!-- ===== 底部 ===== -->
+<footer>
+  <p>🦷 口腔健康与糖尿病科普指南</p>
+  <p style="margin-top:8px;">内容基于医学文献，仅供参考，不能替代专业医疗建议。</p>
+  <p style="margin-top:4px;">如有健康问题，请咨询医生或牙医。</p>
+</footer>
+
+<!-- ===== JavaScript ===== -->
+<script>
+// ===== 滚动淡入动画 =====
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.15 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// ===== 知识问答 =====
+const quizData = [
+  {
+    q: "糖尿病和口腔健康有关系吗？",
+    opts: ["没有关系，是两回事", "有关系，会互相影响", "只有糖尿病影响口腔，反过来不会", "只有口腔影响糖尿病，反过来不会"],
+    ans: 1,
+    explain: "糖尿病和口腔健康是双向关系：血糖高会让口腔更容易出问题，而牙周炎产生的炎症也会影响血糖控制。"
+  },
+  {
+    q: "血糖高会对口腔产生什么影响？",
+    opts: ["没什么影响", "牙齿会变黄", "牙龈更容易发炎、出血，伤口愈合变慢", "只会让嘴巴干"],
+    ans: 2,
+    explain: "高血糖会损害牙龈的小血管，降低免疫力，让细菌更容易繁殖，同时伤口愈合也会变慢。"
+  },
+  {
+    q: "牙周炎为什么会影响血糖？",
+    opts: ["因为牙疼让人吃不下饭", "因为发炎产生的炎症因子进入血液，干扰胰岛素工作", "因为牙周炎会让人大笑消耗血糖", "没有科学依据"],
+    ans: 1,
+    explain: "牙周炎释放的炎症因子（如TNF-α、IL-6）会随血液流向全身，增加胰岛素抵抗，让血糖更难控制。"
+  },
+  {
+    q: "糖尿病患者刷牙出血，应该怎么办？",
+    opts: ["停止刷牙，避免刺激出血的地方", "继续轻柔地刷，同时尽快去看牙医", "换一种牙膏就行", "喝凉茶降火"],
+    ans: 1,
+    explain: "刷牙出血通常说明牙龈有炎症，不能因为出血就不刷牙（会让细菌更多），应该继续轻柔刷牙并及时看牙医。"
+  },
+  {
+    q: "糖尿病患者建议多久看一次牙医？",
+    opts: ["牙疼了才需要看", "每1-2年一次", "每半年到一年一次", "不需要特别看"],
+    ans: 2,
+    explain: "糖尿病患者建议每半年到一年做一次口腔检查和洗牙，早发现早处理，避免小问题拖成大问题。"
+  },
+  {
+    q: "控制好血糖，对口腔健康有帮助吗？",
+    opts: ["没有帮助", "有一点帮助", "帮助很大，血糖稳了口腔问题也会减少", "只对牙齿好，对牙龈没用"],
+    ans: 2,
+    explain: "血糖控制是基础。血糖稳定了，牙龈的血液循环和免疫功能都会改善，口腔问题自然会减少。"
+  }
+];
+
+let currentQ = 0, score = 0, answered = false;
+
+function renderQuestion() {
+  const d = quizData[currentQ];
+  document.getElementById('progressFill').style.width = ((currentQ) / quizData.length * 100) + '%';
+  let html = `<div class="quiz-question">第 ${currentQ+1} 题 / ${quizData.length}：${d.q}</div><div class="quiz-options">`;
+  d.opts.forEach((opt, i) => {
+    html += `<label><input type="radio" name="q" value="${i}"> ${opt}</label>`;
+  });
+  html += '</div><div class="quiz-feedback" id="feedback"></div>';
+  document.getElementById('quizBody').innerHTML = html;
+  document.getElementById('nextBtn').style.display = 'none';
+  answered = false;
+
+  // 绑定选项事件
+  document.querySelectorAll('input[name="q"]').forEach(radio => {
+    radio.addEventListener('change', () => {
+      if (answered) return;
+      answered = true;
+      const val = parseInt(radio.value);
+      const fb = document.getElementById('feedback');
+      if (val === d.ans) {
+        score++;
+        fb.className = 'quiz-feedback correct';
+        fb.innerHTML = '✅ 回答正确！<br>' + d.explain;
+      } else {
+        fb.className = 'quiz-feedback wrong';
+        fb.innerHTML = '❌ 回答错误。正确答案是：' + d.opts[d.ans] + '<br>' + d.explain;
+      }
+      fb.style.display = 'block';
+      // 禁用所有选项
+      document.querySelectorAll('input[name="q"]').forEach(r => r.disabled = true);
+      document.getElementById('nextBtn').style.display = 'inline-block';
+      if (currentQ === quizData.length - 1) {
+        document.getElementById('nextBtn').textContent = '查看成绩';
+      }
+    });
+  });
+}
+
+function nextQuestion() {
+  currentQ++;
+  if (currentQ >= quizData.length) {
+    showResult();
+    return;
+  }
+  renderQuestion();
+}
+
+function showResult() {
+  document.getElementById('quizBody').style.display = 'none';
+  document.getElementById('nextBtn').style.display = 'none';
+  document.getElementById('progressFill').style.width = '100%';
+  const result = document.getElementById('quizResult');
+  result.style.display = 'block';
+  document.getElementById('scoreNum').textContent = score + ' / ' + quizData.length;
+  if (score === quizData.length) {
+    document.getElementById('scoreText').textContent = '太棒了！全部答对！你对口腔和糖尿病的关系非常了解 👏';
+  } else if (score >= 4) {
+    document.getElementById('scoreText').textContent = '很不错！你掌握了不少知识，再看看错的那几题吧 💪';
+  } else {
+    document.getElementById('scoreText').textContent = '还有提升空间！建议再看看上面的科普内容 📖';
+  }
+}
+
+function restartQuiz() {
+  currentQ = 0; score = 0;
+  document.getElementById('quizBody').style.display = 'block';
+  document.getElementById('quizResult').style.display = 'none';
+  renderQuestion();
+}
+
+renderQuestion();
+
+// ===== 风险自测 =====
+function submitAssess() {
+  const checks = document.querySelectorAll('#assessForm input[type="checkbox"]:checked');
+  let total = 0;
+  checks.forEach(c => total += parseInt(c.value));
+
+  const result = document.getElementById('assessResult');
+  result.style.display = 'block';
+
+  if (checks.length === 0) {
+    result.className = 'assess-result low';
+    result.innerHTML = '<div class="result-icon">📝</div><h3>你还没有勾选任何选项</h3><p>请根据自己的实际情况勾选后再提交哦。</p>';
+    return;
+  }
+
+  if (total <= 3) {
+    result.className = 'assess-result low';
+    result.innerHTML = `
+      <div class="result-icon">😊</div>
+      <h3>风险较低</h3>
+      <p>你目前的情况还不错！继续保持良好的口腔卫生习惯：</p>
+      <p>• 每天早晚刷牙，用牙线<br>• 每半年到一年做一次口腔检查<br>• 保持血糖稳定</p>
+    `;
+  } else if (total <= 7) {
+    result.className = 'assess-result mid';
+    result.innerHTML = `
+      <div class="result-icon">⚠️</div>
+      <h3>中等风险</h3>
+      <p>你有一些需要关注的信号，建议：</p>
+      <p>• 尽快预约一次牙科检查<br>• 关注自己的血糖控制情况<br>• 加强日常口腔护理（认真刷牙 + 牙线）<br>• 如果还没查过血糖，建议也查一下</p>
+    `;
+  } else {
+    result.className = 'assess-result high';
+    result.innerHTML = `
+      <div class="result-icon">🚨</div>
+      <h3>风险较高</h3>
+      <p>你有多个需要重视的信号，强烈建议：</p>
+      <p>• <strong>尽快</strong>去看牙医，检查牙周情况<br>• 同时去查一下血糖（空腹血糖 + 糖化血红蛋白）<br>• 告诉牙医你的血糖情况<br>• 认真对待每一次刷牙，不要因为出血就不刷</p>
+      <p style="margin-top:8px;color:#991b1b;font-weight:600;">口腔问题和血糖问题越早干预，效果越好。</p>
+    `;
+  }
+}
+</script>
+
+</body>
+</html>
